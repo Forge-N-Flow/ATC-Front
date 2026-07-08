@@ -151,6 +151,7 @@ export default function LeCabinetPage() {
           </div>
           <ImageSlot
             hint="photo : l'équipe du cabinet"
+            src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=1200&auto=format&fit=crop"
             className="h-[400px] w-full"
           />
         </div>

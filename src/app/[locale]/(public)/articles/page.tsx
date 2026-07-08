@@ -38,6 +38,7 @@ export default async function ArticlesPage() {
                 >
                   <ImageSlot
                     hint={article.imageHint}
+            src={article.imageUrl}
                     dark
                     className="h-full min-h-[220px] w-full"
                   />

@@ -23,6 +23,8 @@ export interface Article {
   readingTime: string;
   /** Description de la photo attendue (composant ImageSlot). */
   imageHint: string;
+  /** Visuel de l'article (URL locale ou distante). */
+  imageUrl: string;
   /** Chapô (introduction en serif sur la page détail). */
   chapo: string;
   /** Corps structuré : alternance d'intertitres et de paragraphes. */
@@ -55,6 +57,7 @@ export const MOCK_ARTICLES: Article[] = [
     date: "2020-06-15",
     readingTime: "6 min",
     imageHint: "photo : jeu d'échecs, pièces en bois",
+    imageUrl: "/images/cropped-jeux-echecs.jpg",
     chapo:
       "Retour d'expérience sur les méthodes que nous utilisons et qui sont pratiquées par les intermédiaires dans le cadre de cessions de PME.",
     body: [
@@ -93,6 +96,7 @@ export const MOCK_ARTICLES: Article[] = [
     date: "2020-05-15",
     readingTime: "5 min",
     imageHint: "photo : réunion de travail, dossier de présentation",
+    imageUrl: "https://images.unsplash.com/photo-1556761175-b413da4baf72?q=80&w=1200&auto=format&fit=crop",
     chapo:
       "Le dossier de présentation est le premier document formalisé du processus de transmission dont disposeront les acquéreurs.",
     body: [
@@ -130,6 +134,7 @@ export const MOCK_ARTICLES: Article[] = [
     date: "2020-04-15",
     readingTime: "5 min",
     imageHint: "photo : poignée de main, signature d'accord",
+    imageUrl: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=1200&auto=format&fit=crop",
     chapo:
       "Mise en parallèle simplifiée de la démarche d'un cédant et de celle d'un repreneur.",
     body: [

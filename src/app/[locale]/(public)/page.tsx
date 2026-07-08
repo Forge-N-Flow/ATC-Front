@@ -163,6 +163,7 @@ export default async function HomePage() {
             <div className="flex flex-col border border-ink/8 bg-paper">
               <ImageSlot
                 hint="photo : dirigeant cédant, atelier ou bureau"
+                src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=1200&auto=format&fit=crop"
                 className="h-[280px] w-full"
               />
               <div className="flex flex-col gap-4 px-[38px] pb-[38px] pt-10">
@@ -185,6 +186,7 @@ export default async function HomePage() {
             <div className="flex flex-col border border-ink/8 bg-paper">
               <ImageSlot
                 hint="photo : repreneur en visite de site"
+                src="https://images.unsplash.com/photo-1553877522-43269d4ea984?q=80&w=1200&auto=format&fit=crop"
                 className="h-[280px] w-full"
               />
               <div className="flex flex-col gap-4 px-[38px] pb-[38px] pt-10">

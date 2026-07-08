@@ -13,6 +13,7 @@ const EXPERTISES = [
     num: "I",
     reversed: false,
     imgHint: "photo : poignée de main, dirigeants",
+    imgSrc: "https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=1200&auto=format&fit=crop",
     title: "Transmission d'entreprise",
     description:
       "Nous accompagnons cédants et repreneurs à chaque étape de l'opération : évaluation de l'entreprise, négociation, montage juridique et financier, recherche de financement. Une méthode éprouvée depuis 2004, menée en toute confidentialité.",
@@ -23,6 +24,7 @@ const EXPERTISES = [
     num: "II",
     reversed: true,
     imgHint: "photo : bureau, documents financiers",
+    imgSrc: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=1200&auto=format&fit=crop",
     title: "Expertise comptable & financière",
     description:
       "Tenue, révision, établissement des comptes annuels, tableaux de bord et pilotage : nous donnons aux dirigeants de PME une lecture stratégique de leurs chiffres, jusqu'à la direction financière externalisée.",
@@ -33,6 +35,7 @@ const EXPERTISES = [
     num: "III",
     reversed: false,
     imgHint: "photo : équipe start-up en réunion",
+    imgSrc: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1200&auto=format&fit=crop",
     title: "Accompagnement d'entreprises innovantes",
     description:
       "Structuration financière, préparation et conduite de levées de fonds, opérations de croissance externe : nous aidons les start-up à franchir leurs caps de croissance sur des bases financières solides.",
@@ -43,6 +46,7 @@ const EXPERTISES = [
     num: "IV",
     reversed: true,
     imgHint: "photo : confrères experts-comptables",
+    imgSrc: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=1200&auto=format&fit=crop",
     title: "Accompagnement corporate des experts-comptables",
     description:
       "Nous appuyons les cabinets d'expertise comptable qui souhaitent développer des missions de transmission pour leurs clients : méthodologie, outils d'évaluation, co-traitement des dossiers.",
@@ -53,6 +57,7 @@ const EXPERTISES = [
     num: "V",
     reversed: false,
     imgHint: "photo : Hélène Bensaid, pôle social",
+    imgSrc: "/images/PHOTO-HB-768x1024.jpeg",
     title: "Expertise sociale",
     description:
       "Gestion de la paie, conseil RH et droit social, suivi des obligations légales : un pôle dédié, dirigé par Hélène Bensaid, pour sécuriser la dimension humaine de votre entreprise.",
@@ -89,6 +94,7 @@ export default function ExpertisesPage() {
               >
                 <ImageSlot
                   hint={exp.imgHint}
+                  src={exp.imgSrc}
                   className="h-[min(400px,110vw)] w-full"
                 />
               </div>

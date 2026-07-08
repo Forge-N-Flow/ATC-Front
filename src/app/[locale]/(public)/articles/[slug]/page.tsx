@@ -92,6 +92,7 @@ export default async function ArticlePage({
         <div className="mx-auto max-w-[760px] px-5 py-[clamp(48px,8vw,80px)] sm:px-10">
           <ImageSlot
             hint={article.imageHint}
+            src={article.imageUrl}
             dark
             className="mb-11 aspect-[16/8] w-full rounded-[4px]"
           />
