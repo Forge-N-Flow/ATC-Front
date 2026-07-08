@@ -88,9 +88,9 @@ export default function ExpertiseComptablePage() {
       <section className="border-t border-ink/6 bg-paper">
         <div className="mx-auto grid max-w-[1240px] grid-cols-1 items-center gap-[clamp(32px,6vw,90px)] px-5 py-[clamp(64px,10vw,110px)] sm:px-10 min-[900px]:grid-cols-[340px_1fr]">
           <div className="aspect-[3/4] w-full max-w-[340px] rounded-md border border-gold/50 bg-cream p-2">
-            {/* Photo réelle : atc.paris/wp-content/uploads/2020/09/photo-AT.jpg (site hors ligne) */}
             <ImageSlot
               hint="portrait : Alexandre Tellier"
+              src="/images/photo-AT.jpg"
               className="h-full w-full rounded-[4px]"
             />
           </div>

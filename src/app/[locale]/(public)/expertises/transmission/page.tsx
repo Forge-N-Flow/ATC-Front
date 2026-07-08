@@ -20,6 +20,7 @@ const PARCOURS = [
     cta: "Découvrir l'accompagnement reprise →",
     href: "/expertises/reprise",
     hint: "photo : repreneur, poignée de main",
+    src: "/images/Photo-slide-02.jpg",
   },
   {
     piece: "♚",
@@ -29,6 +30,7 @@ const PARCOURS = [
     cta: "Découvrir l'accompagnement cession →",
     href: "/expertises/cession",
     hint: "photo : cédant, transmission de clés",
+    src: "/images/photo-slide-01.jpg",
   },
 ];
 
@@ -102,7 +104,7 @@ export default function TransmissionPage() {
               href={p.href}
               className="flex flex-col border border-ink/8 bg-paper text-ink transition-colors hover:border-gold/60"
             >
-              <ImageSlot hint={p.hint} className="h-[260px] w-full" />
+              <ImageSlot hint={p.hint} src={p.src} className="h-[260px] w-full" />
               <div className="flex flex-col gap-4 px-9 pb-10 pt-[38px]">
                 <span className="font-serif text-xl italic text-gold">
                   {p.piece}

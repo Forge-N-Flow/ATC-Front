@@ -22,7 +22,7 @@ export interface Testimonial {
   excerpt?: string;
   /** Rendu de l'extrait : citation à la première personne, ou récit. */
   excerptStyle: "citation" | "recit";
-  /** Logo client (www.atc.paris). */
+  /** Logo client (fichier local /public/images/clients). */
   logoUrl: string | null;
   /** Contenu long du témoignage (page détail), paragraphes. */
   body: string[];
@@ -36,7 +36,7 @@ export interface Testimonial {
 // Temoignage.dc.html). Ordre = ordre de la grille (utilisé pour préc./suiv.).
 // ---------------------------------------------------------------------------
 
-const LOGO_BASE = "https://www.atc.paris/wp-content/uploads/2024/05/";
+const LOGO_BASE = "/images/clients/";
 
 export const MOCK_TESTIMONIALS: Testimonial[] = [
   {

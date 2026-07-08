@@ -302,6 +302,7 @@ export default async function HomePage() {
           <div className="w-full min-[900px]:justify-self-end min-[900px]:max-w-[480px]">
             <ImageSlot
               hint="photo : échiquier, lumière chaude"
+              src="/images/photo-slide-01.jpg"
               dark
               className="h-[min(560px,110vw)] w-full"
             />
@@ -314,6 +315,7 @@ export default async function HomePage() {
         <div className="mx-auto grid max-w-[1240px] grid-cols-1 items-center gap-[clamp(48px,8vw,100px)] px-5 py-[clamp(64px,12vw,130px)] sm:px-10 min-[900px]:grid-cols-[420px_1fr]">
           <ImageSlot
             hint="portrait : Alexandre Tellier, lumière naturelle"
+            src="/images/photo-AT.jpg"
             className="h-[min(520px,110vw)] w-full min-[900px]:w-[420px]"
           />
           <div className="flex max-w-[560px] flex-col gap-[26px]">

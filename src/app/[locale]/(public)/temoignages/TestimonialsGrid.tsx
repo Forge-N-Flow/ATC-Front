@@ -63,10 +63,19 @@ export default function TestimonialsGrid({
           >
             <div className="flex items-center justify-between gap-4">
               <div className="flex h-[52px] w-[130px] items-center">
-                {/* Logos hébergés sur l'ancien atc.paris (hors ligne) : monogramme en attendant. */}
-                <span className="whitespace-nowrap rounded-xs border border-gold/50 px-3 py-[5px] font-serif text-lg text-gold">
-                  {initiales(t.company)}
-                </span>
+                {t.logoUrl ? (
+                  // eslint-disable-next-line @next/next/no-img-element
+                  <img
+                    src={t.logoUrl}
+                    alt={t.company}
+                    loading="lazy"
+                    className="max-h-[52px] max-w-[130px] object-contain opacity-80 grayscale transition-[filter,opacity] duration-200 hover:opacity-100 hover:grayscale-0"
+                  />
+                ) : (
+                  <span className="whitespace-nowrap rounded-xs border border-gold/50 px-3 py-[5px] font-serif text-lg text-gold">
+                    {initiales(t.company)}
+                  </span>
+                )}
               </div>
               <span
                 className={`whitespace-nowrap rounded-xs border px-3 py-1.5 text-[11px] font-semibold uppercase tracking-[0.18em] ${

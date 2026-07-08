@@ -73,10 +73,18 @@ export default async function TemoignagePage({
           </h1>
           <div className="flex flex-wrap items-center gap-4">
             <span className="inline-flex items-center rounded-[4px] bg-paper px-3.5 py-2">
-              {/* Logo hébergé sur l'ancien atc.paris (hors ligne) : nom en attendant. */}
-              <span className="whitespace-nowrap font-serif text-base text-ink">
-                {testimonial.company}
-              </span>
+              {testimonial.logoUrl ? (
+                // eslint-disable-next-line @next/next/no-img-element
+                <img
+                  src={testimonial.logoUrl}
+                  alt={testimonial.company}
+                  className="max-h-9 max-w-[140px] object-contain"
+                />
+              ) : (
+                <span className="whitespace-nowrap font-serif text-base text-ink">
+                  {testimonial.company}
+                </span>
+              )}
             </span>
             <div className="flex flex-col gap-0.5">
               <span className="text-[15px] font-semibold">

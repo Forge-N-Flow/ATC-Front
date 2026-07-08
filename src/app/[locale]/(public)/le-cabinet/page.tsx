@@ -78,9 +78,9 @@ export default function LeCabinetPage() {
 
           <div className="mb-[clamp(64px,9vw,110px)] grid grid-cols-1 items-center gap-[clamp(40px,7vw,90px)] min-[900px]:grid-cols-[380px_1fr]">
             <div className="w-full max-w-[380px] rounded-md border border-gold/50 bg-paper p-2">
-              {/* Photo réelle : atc.paris/wp-content/uploads/2020/09/photo-AT.jpg (site hors ligne) */}
               <ImageSlot
                 hint="portrait : Alexandre Tellier"
+              src="/images/photo-AT.jpg"
                 className="aspect-[3/4] w-full rounded-[4px]"
               />
             </div>
@@ -124,9 +124,9 @@ export default function LeCabinetPage() {
               </p>
             </div>
             <div className="w-full max-w-[380px] rounded-md border border-gold/50 bg-paper p-2">
-              {/* Photo réelle : atc.paris/wp-content/uploads/2020/09/PHOTO-HB-768x1024.jpeg (site hors ligne) */}
               <ImageSlot
                 hint="portrait : Hélène Bensaid"
+              src="/images/PHOTO-HB-768x1024.jpeg"
                 className="aspect-[3/4] w-full rounded-[4px]"
               />
             </div>
