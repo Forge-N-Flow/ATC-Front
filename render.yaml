@@ -1,0 +1,19 @@
+# Blueprint Render — site vitrine ATC (Next.js 16).
+# Le domaine définitif (atc.paris, ancien site) sera rattaché plus tard
+# dans Render > Settings > Custom Domains.
+services:
+  - type: web
+    name: atc-front
+    runtime: node
+    region: frankfurt
+    plan: free
+    buildCommand: npm ci && npm run build
+    startCommand: npm run start
+    healthCheckPath: /
+    autoDeploy: true
+    envVars:
+      - key: NODE_VERSION
+        value: "22.22.0"
+      # À renseigner quand l'API (type topsy-api) existera :
+      # - key: NEXT_PUBLIC_API_URL
+      #   value: https://atc-api.onrender.com/api/v1
