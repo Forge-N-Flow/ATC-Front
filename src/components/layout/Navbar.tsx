@@ -1,10 +1,10 @@
 "use client";
 
 import { useState } from "react";
-import Image from "next/image";
 import { ChevronDown, Menu, X } from "lucide-react";
 import { Link, usePathname } from "@/i18n/navigation";
 import { METIERS, CLIENT_PORTAL_URL } from "@/content/metiers";
+import Logo from "@/components/ui/Logo";
 
 const NAV_LINKS = [
   { href: "/temoignages", label: "Témoignages" },
@@ -36,14 +36,7 @@ export default function Navbar() {
           className="flex shrink-0 items-center"
           onClick={() => setMobileOpen(false)}
         >
-          <Image
-            src="https://www.atc.paris/wp-content/uploads/2020/09/cropped-logo-fond-blanc-e1599656553868.jpg"
-            alt="ATC Conseil et Expertise"
-            width={215}
-            height={48}
-            priority
-            className="h-12 w-auto mix-blend-multiply"
-          />
+          <Logo />
         </Link>
 
         {/* Desktop nav */}

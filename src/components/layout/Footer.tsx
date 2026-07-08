@@ -1,6 +1,6 @@
-import Image from "next/image";
 import { Link } from "@/i18n/navigation";
 import { CABINET_ADDRESS } from "@/content/metiers";
+import Logo from "@/components/ui/Logo";
 
 const FOOTER_LINKS = [
   { href: "/expertises", label: "Expertises" },
@@ -19,13 +19,7 @@ export default function Footer() {
           href="/"
           className="inline-flex items-center rounded-full bg-cream px-4 py-[7px]"
         >
-          <Image
-            src="https://www.atc.paris/wp-content/uploads/2020/09/cropped-logo-fond-blanc-e1599656553868.jpg"
-            alt="ATC"
-            width={60}
-            height={28}
-            className="h-7 w-auto mix-blend-multiply"
-          />
+          <Logo compact />
         </Link>
 
         <nav className="flex flex-wrap gap-x-7 gap-y-3">
