@@ -1,0 +1,31 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "metiers": "Nos métiers",
+    "temoignages": "Témoignages",
+    "articles": "Articles",
+    "agenda": "Agenda",
+    "cabinet": "Le cabinet",
+    "contact": "Contact",
+    "clientAccess": "Accès client",
+    "cta": "Prendre rendez-vous"
+  },
+  "footer": {
+    "tagline": "6 rue Papillon, 75009 Paris. Confidentialité absolue.",
+    "expertises": "Expertises",
+    "transmission": "Transmission",
+    "cabinet": "Le cabinet",
+    "contact": "Contact",
+    "legal": "Mentions légales",
+    "privacy": "Confidentialité"
+  },
+  "common": {
+    "readMore": "Lire la suite",
+    "seeAll": "Voir tout",
+    "backHome": "Retour à l'accueil"
+  },
+  "notFound": {
+    "title": "Page introuvable",
+    "description": "La page que vous cherchez n'existe pas ou a été déplacée."
+  }
+}
